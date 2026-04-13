@@ -57,5 +57,5 @@ let iva = precioProducto * 0.19;
 let totalFinal = precioProducto + iva;
 console.log("El total final con IVA es: " + totalFinal);
 
-const paisOrigen = "Chile"
-paisOrigen = "Ecuador"
+const paisOrigen = "Chile";
+paisOrigen = "Ecuador";
