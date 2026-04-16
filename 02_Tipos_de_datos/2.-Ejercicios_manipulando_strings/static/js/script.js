@@ -127,7 +127,7 @@ let curso = "4C";
 let anio = "2026";
 let anioTexto = String(anio); // anio a texto
 console.log(`El tipo de dato de Año es: ${typeof anio}`);
-console.log = (`Curso: ${curso}
+console.log(`Curso: ${curso}
     \nAño: ${anio}
     \nEl tipo de dato de Año es ${typeof anio}.toUpperCase()`);
 // Desafío extra (nivel alto)
