@@ -56,9 +56,10 @@ console.log(texto1.includes("JavaScript"));
 // El texto completo en MAYÚSCULAS
 // La cantidad total de caracteres
 let texto2 = "arroz, fideos, aceite, sal";
-console.log(texto2.includes("aceite"));
-console.log(texto2.toUpperCase());
-console.log(`El ${texto2} tiene ${texto2.length} caracteres.`);
+console.log(`La lista de compras ${texto2.toUpperCase()}.
+\nEl texto tiene ${texto2.length} caracteres.
+\nEncuentra la palabra: ${texto2.includes("aceite")}`);
+
 // 6️⃣ Conversión + análisis
 // Crea las variables:
 // numeroCasa: 456
@@ -95,11 +96,11 @@ console.log(`${nombre_}${apellido_} tiene ${nombreCompleto.length} caracteres.`.
 // Si contiene la palabra "strings"
 // La frase en MAYÚSCULAS
 // La cantidad de caracteres
-let frase = "Hoy aprenderemos sobre strings"
-console.log(`Hoy aprenderemos sobre strings`)
-console.log(frase.includes("strings"))
-console.log(frase.toUpperCase())
-console.log(`Tiene ${frase.length} caracteres.`)
+let frase = "Hoy aprenderemos sobre strings";
+console.log(`Hoy aprenderemos sobre strings`);
+console.log(frase.includes("strings"));
+console.log(frase.toUpperCase());
+console.log(`Tiene ${frase.length} caracteres.`);
 // 9️⃣ Comparación de formatos
 // Crea la variable:
 // texto: Programar es divertido
@@ -108,11 +109,11 @@ console.log(`Tiene ${frase.length} caracteres.`)
 // El texto en minúsculas
 // El texto en mayúsculas
 // La cantidad de caracteres
-let texto3 = "Programar es divertido"
-console.log(`Texto original: ${texto3}`)
-console.log(texto3.toLowerCase())
-console.log(texto3.toUpperCase())
-console.log(`Tiene ${texto3.length} caracteres.`)
+let texto3 = "Programar es divertido";
+console.log(`Texto original: ${texto3}`);
+console.log(texto3.toLowerCase());
+console.log(texto3.toUpperCase());
+console.log(`Tiene ${texto3.length} caracteres.`);
 // 🔟 Desafío completo integrado
 // Crea las variables:
 // curso: 4C
@@ -122,16 +123,16 @@ console.log(`Tiene ${texto3.length} caracteres.`)
 // Convierta el año a texto
 // Indique el tipo de dato del año convertido
 // Muestre todo el mensaje en MAYÚSCULAS
-let curso = "4C"
-let anio = "2026"
+let curso = "4C";
+let anio = "2026";
 let anioTexto = String(anio); // anio a texto
 console.log(`El tipo de dato de Año es: ${typeof anio}`);
 console.log = (`Curso: ${curso}
     \nAño: ${anio}
-    \nEl tipo de dato de Año es ${typeof anio}.toUpperCase()`)
+    \nEl tipo de dato de Año es ${typeof anio}.toUpperCase()`);
 // Desafío extra (nivel alto)
 const textoFinal = "Estoy listo para el desafio"
-console.log(`El texto final tiene ${textoFinal.length} caracteres.`)
-console.log(textoFinal.includes("desafio"))
+console.log(`El texto final tiene ${textoFinal.length} caracteres.`);
+console.log(textoFinal.includes("desafio"));
 console.log(`${textoFinal} 
-\nTipo de dato: ${typeof textoFinal}`.toUpperCase())
+\nTipo de dato: ${typeof textoFinal}`.toUpperCase());
