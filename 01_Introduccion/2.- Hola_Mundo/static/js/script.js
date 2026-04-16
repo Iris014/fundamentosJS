@@ -2,8 +2,8 @@ console.log("¡Archivo vinculado correctamente!");
 // --- NIVEL: VARIABLES Y CONSOLA ---
 
 // 1. Presentación
-const nombre = "Dany"; 
-let edad = 25; // Puedes cambiar este valor por el tuyo
+const nombre = "Iris"; 
+let edad = 17; // Puedes cambiar este valor por el tuyo
 console.log("Mi nombre es " + nombre + " y tengo " + edad + " años");
 
 // 2. Año de nacimiento
@@ -42,7 +42,7 @@ console.log(comentarios); // Mostrará null
 
 // 7. Suma de strings
 let saludo = "Hola";
-let nombreAmigo = "Dany";
+let nombreAmigo = "Elian";
 let saludoCompleto = saludo + " " + nombreAmigo;
 console.log(saludoCompleto);
 
@@ -52,10 +52,13 @@ let pais = "Chile";
 console.log(`Bienvenido a ${ciudad}, ${pais}`);
 
 // 9. Calculadora de IVA
-let precioProducto = 1000;
+let precioProducto = 2500;
 let iva = precioProducto * 0.19;
 let totalFinal = precioProducto + iva;
 console.log("El total final con IVA es: " + totalFinal);
 
 const paisOrigen = "Chile";
-paisOrigen = "Ecuador"; //Comentario
+
+// paisOrigen = "Ecuador"; 
+
+console.log("País de origen:", paisOrigen);
