@@ -83,25 +83,42 @@ function divisionYresto(){
 // Muestra si el primero es mayor que el segundo
 // Verifica si uno de ellos es igual a 10
 function compararNumeros(){
-    let numero01 = 5
-    let numero02 = 7
-    
+    let numero01 = 5;
+    let numero02 = 7;
+    alert(`Es el primer numero mayor que el segundo:`, numero01 > numero02);
+    console.log("Es 5 igual a 10:", numero01 === 10);
+    console.log("Es 7 igual a 10:", numero02 === 10);
 }
 // 🔹 Ejercicio 8: Notación científica aplicada
 // Declara:
 // Una población usando notación científica (ej: 1e6)
 // Divide esa población en 4 grupos
 // Muestra el resultado
-
+function aplicarNotacion(){
+    let poblacion = 1e6;
+    let notacion = 1e6/4;
+    alert(`Una poblacion usando notacion cientifica de 1e6 se divide en 4: ${notacion}`)
+}
 // 🔹 Ejercicio 9: Potencia y cálculo combinado
 // Calcula:
 // 3 elevado a 4
 // Luego multiplícalo por 2
 // Resta 10 al resultado final
-
+function potenciaCalculo(){
+    let potencia = 3**4;
+    let combinacion = potencia*2
+    let calculo = combinacion-10;
+    alert(`3**4 = ${potencia}
+        \n${potencia}*2 = ${combinacion}
+        \n${combinacion} - 10 = ${calculo}`)
+}
 // 🔹 Ejercicio 10: Dado aleatorio 🎲
 // Simula el lanzamiento de un dado:
 // Genera un número entre 1 y 6
 // Muestra el resultado
 // Indica si el número es mayor o igual a 4 (gana) o menor (pierde)
-
+function dadoAleatorio(){
+    let aleatorio = Math.random(); // entre 0 y 1
+    let dado = Math.floor(Math.random()*6)+1; // 
+    alert(`Tirar dados: ${dado}`);
+}
