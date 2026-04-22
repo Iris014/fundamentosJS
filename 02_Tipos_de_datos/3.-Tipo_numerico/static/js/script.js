@@ -1,4 +1,4 @@
-console.log("Conexon exitosa con js...");
+console.log("Conexion exitosa con js...");
 
 // Tipos de datos numéricos
 
@@ -21,8 +21,8 @@ console.log(`El resultado deb 2 elevado a 3 en potencia es: ${2**3}.`);
 
 // 3.- Incremento y decremento
 let numero = 10;
-numero++; //11
-nunero--; //9
+numero++; // 11
+numero--; // 10
 
 // 4.- Numeros con decimales
 let promedio = 6.5;
@@ -39,14 +39,27 @@ console.log("numeroPequeno 5e-3: " + numeroPequeno);
 // calculo de precios
 let precioProducto = 10000;
 let iva = 0.19;
-let total = precioProducto + (precioProducto * iva); //11900
+let total = precioProducto + (precioProducto * iva); // 11900
 console.log("El valor final del producto es: " + total);
-//Calculo de vaor de horatrabajada 
-let horas = b40;
+// Calculo de valor de hora trabajada 
+let horas = 40; // Corregido: eliminada la "b" de "b40"
 let valorHora = 12000;
 let sueldo = horas * valorHora;
 console.log("El sueldo base es: " + sueldo);
 
-// 7.- Redondeo de nunmeros
-console.log("Redondeando 4.6: " + Math.round(4.6)); //5
-console.log("Redondeando 4.6: " + Math.floor(4.6)); //5
+// 7.- Redondeo de numeros
+console.log("Redondeando 4.6 (round): " + Math.round(4.6)); // 5
+console.log("Redondeando 4.6 (floor): " + Math.floor(4.6)); // 4
+
+// 8.- Números aleatorios
+let aleatorio = Math.random(); // entre 0 y 1
+let dado = Math.floor(Math.random()*6)+1; // 
+console.log(`Tirar dados: ${dado}`);
+
+// 9.- Comparaciones númericas
+let a = 10;
+let b = 5;
+console.log(a > b); //True
+console.log(a < b); //False
+console.log(a === 10); //True (=== estricta igualdad)
+console.log(b === 3); //False
