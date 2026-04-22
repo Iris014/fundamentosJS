@@ -42,7 +42,7 @@ let iva = 0.19;
 let total = precioProducto + (precioProducto * iva); // 11900
 console.log("El valor final del producto es: " + total);
 // Calculo de valor de hora trabajada 
-let horas = 40; // Corregido: eliminada la "b" de "b40"
+let horas = 40;
 let valorHora = 12000;
 let sueldo = horas * valorHora;
 console.log("El sueldo base es: " + sueldo);

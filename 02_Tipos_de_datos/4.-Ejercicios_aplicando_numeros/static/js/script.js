@@ -7,14 +7,21 @@ console.log("Conexion exitosa con js")
 // Muestra ambos resultados en consola.
 
 function edadProyectada(){
-    alert("Boton funcionando..."); // alerta en pantalla
+    let edad = 16;
+    alert(`Mi edad es: ${edad}
+        \nEn cinco años tendré: ${edad} + 5
+        \nHace 10 años tenía: ${edad} - 10`)
 }
 // 🔹 Ejercicio 2: Compra con descuento
 // Un producto cuesta $25.000 y tiene un descuento del 20%.
 // Calcula el precio final
 // Muestra el resultado
 function compraDescuento(){
-    alert
+    let producto = 25000;
+    let descuento = 0.20;
+    let precioFinal = 25000*0.8;
+    alert(`Un producto cuesta $25000 y tiene un descuento del 20%.
+        \nEl precio final es: $${precioFinal}`)
 }
 
 // 🔹 Ejercicio 3: Promedio de notas
@@ -22,7 +29,12 @@ function compraDescuento(){
 // Calcula el promedio
 // Redondea el resultado usando Math.round()
 function promedioNotas(){
-
+    let notaDecimal1 = 5.5;
+    let notaDecimal2 = 6.0;
+    let notaDecimal3 = 6.5;
+    let promedio = (5.5 + 6.0 + 6.5)/3;
+    alert(`Las notas decimales son: ${notaDecimal1}; ${notaDecimal2}; ${notaDecimal3}
+        \nSu promedio es ${promedio}`)
 }
 
 // 🔹 Ejercicio 4: Temperatura
@@ -31,7 +43,12 @@ function promedioNotas(){
 // Luego disminúyela en 5 grados
 // Muestra el resultado final
 function calcularTemperatura(){
-
+    let temperaturaActual = 13;
+    let aumenta = 13 + 3;
+    let disminuye = 16 - 5;
+    alert(`La temperatura actual es: ${temperaturaActual}°C
+        \nAumenta a ${aumenta}°C
+        \nDisminuye a ${disminuye}°C`)
 }
 
 // 🔹 Ejercicio 5: Sueldo semanal
@@ -39,18 +56,37 @@ function calcularTemperatura(){
 // Calcula su sueldo
 // Si trabaja 5 horas extra, agrégalas usando incremento
 // Muestra el nuevo sueldo
+function sueldoSemanal(){
+    let sueldoHora = 8000;
+    let horas = 45;
+    let sueldo = 8000*45;
+    let horasExtra = 5;
+    sueldo+=(5 * sueldoHora)
+    alert(`El nuevo sueldo de un trabajador es: $${sueldo}`)
+}
 
 // 🔹 Ejercicio 6: División y resto
 // Declara dos números:
 // Calcula la división
 // Calcula el módulo (%)
 // Explica el resultado en consola
-
+function divisionYresto(){
+    let numero1 = 8;
+    let numero2 = 2;
+    let division = (numero1/numero2);
+    let modulo = (numero1%numero2);
+    alert(`La division de "${numero1}/${numero2}" da como resultado ${division}. Se reparte 8 en 2 partes donde cada una equivale a 4.
+        \nEl modulo de "${numero1}%${numero2}" da como resultado ${modulo}. Se hace la division "8/2", y su resto o lo que queda es 0.`)
+}
 // 🔹 Ejercicio 7: Comparación de números
 // Declara dos números:
 // Muestra si el primero es mayor que el segundo
 // Verifica si uno de ellos es igual a 10
-
+function compararNumeros(){
+    let numero01 = 5
+    let numero02 = 7
+    
+}
 // 🔹 Ejercicio 8: Notación científica aplicada
 // Declara:
 // Una población usando notación científica (ej: 1e6)
