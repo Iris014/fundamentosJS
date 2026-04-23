@@ -118,7 +118,8 @@ function potenciaCalculo(){
 // Muestra el resultado
 // Indica si el número es mayor o igual a 4 (gana) o menor (pierde)
 function dadoAleatorio(){
-    let aleatorio = Math.random(); // entre 0 y 1
-    let dado = Math.floor(Math.random()*6)+1; // 
-    alert(`Tirar dados: ${dado}`);
+    let dado = Math.floor(Math.random()*6) + 1; 
+    alert(`Simulación de lanzamiento de dado
+        \nResultado de dado: ${dado}
+        \n${dado >= 4 ? "Ganaste" : "Perdiste"}`);
 }
