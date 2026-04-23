@@ -67,7 +67,7 @@ OPERADORES DE COMPARACIÓN
 let num = 10;
 let num2 = 5;
 if (num !== num2){ //Comparación con distinto
-    console.log(`El nu´mero: ${num} es distinto que ${num2}`)
+    console.log(`El número: ${num} es distinto que ${num2}`)
 } else{
     console.log("Son iguales!")
 }
