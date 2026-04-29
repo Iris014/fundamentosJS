@@ -41,7 +41,7 @@ function ejercicio3() {
 function ejercicio4() {
     let num5 = 8;
     let num6 = 3;
-    let nultiplicacion = num5*num6;
+    let multiplicacion = num5 * num6;
     alert(`La multiplicación es: ${multiplicacion}`);
 }
 
@@ -54,8 +54,8 @@ function ejercicio5() {
     let nota1 = 6.5;
     let nota2 = 5.8;
     let nota3 = 4.8;
-    let promedio = (nota1 + nota2 + nota3)/3
-    alert(`El promedio es: ${promedio}`)
+    let promedio = (nota1 + nota2 + nota3)/3;
+    alert(`El promedio es: ${promedio}`);
 }
 
 
@@ -90,7 +90,8 @@ function ejercicio7() {
 // "Estudiante aprobado"
 
 function ejercicio8() {
-    if (nota <= 4.0) {
+    let nota = 7.0;
+    if (nota >= 4.0) {
         alert(`Estudiante aprobado`);
     } else {
         alert(`Estudiante desaprobado`);
@@ -102,7 +103,8 @@ function ejercicio8() {
 // Resultado esperado en alert:
 // "Precio final con descuento: $18000"
 
-function ejercicio9() {let precio = 100;
+function ejercicio9() {
+    let precio = 20000;
     let descuento = precio*0.10;
     let precioFinal = precio - descuento;
     alert(`Precio final con descuento: $${precioFinal}`);
@@ -116,10 +118,10 @@ function ejercicio9() {let precio = 100;
 function ejercicio10() {
 let num7 = 9;
 let num8 = 4;
-if (num7 < num8) {
-    alert(`El número mayor es: ${num1}`)
+if (num7 > num8) {
+    alert(`El número mayor es: ${num7}`);
 } else {
-    alert(`El número mayor es: ${num2}`)
+    alert(`El número mayor es: ${num8}`);
     }
 }
 
