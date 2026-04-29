@@ -37,9 +37,9 @@ function ejercicio13() {
     let correo = "liceovvh@gmail.com"
     if (correo.length > 15) {
         alert(`El correo convertido es: ${correo} 
-            \ny el resultado es: Correo válido`)
+            \ny el resultado es: correo válido`)
     } else {
-        alert(`Correo inválido`)
+        alert(`correo inválido`)
     }
 }
 
@@ -49,7 +49,14 @@ function ejercicio13() {
 // `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
 function ejercicio14() {
-
+    let frase = "Estoy aprendiendo JavaScript";
+    if (frase.length > 20) {
+        alert(`La frase "Estoy aprendiendo JavaScript" tiene ${frase.length} caracteres y corresponde a una Frase larga`);
+    } else if (frase.length > 11) {
+        alert(`Frase mediana`);
+    } else {
+        alert(`Frase corta`);
+    }
 }
 
 
@@ -58,5 +65,16 @@ function ejercicio14() {
 // `El producto TECLADO tiene un precio final de $45000`
 
 function ejercicio15() {
-
+    let producto = "teclado";
+    let precioProducto = 50000;
+    let descuento = 0;
+    let precioFinal = precioProducto - descuento;
+    if (precioProducto >= 50000) {
+        descuento = precioProducto * 0.10;
+    } else if (precioProducto >= 20000) {
+        descuento = precioProducto * 0.10;
+    } else {
+        descuento = 0;
+    }
+    alert(`El producto ${producto.toUpperCase()} tiene un precio final de $${precioFinal}`);
 }
