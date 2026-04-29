@@ -30,7 +30,7 @@ function ejercicio3() {
     let num3 = 18;
     let num4 = 6;
     let resta = num3 - num4;
-    alert(`La resta es: ${resta}`)
+    alert(`La resta es: ${resta}`);
 }
 
 
@@ -41,8 +41,8 @@ function ejercicio3() {
 function ejercicio4() {
     let num5 = 8;
     let num6 = 3;
-    let nultiplicacion = num5*num6
-    alert(`La multiplicación es: ${multiplicacion}`)
+    let nultiplicacion = num5*num6;
+    alert(`La multiplicación es: ${multiplicacion}`);
 }
 
 
@@ -66,7 +66,7 @@ function ejercicio5() {
 function ejercicio6() {
 let edad = 18;
 if (edad >= 18) {
-    alert(`Es mayor de edad`)
+    alert(`Es mayor de edad`);
 }
 }
 
@@ -80,7 +80,7 @@ function ejercicio7() {
     if (num % 2 === 0) {
         alert(`El número ${num} es par`);
     } else {
-    alert(`El número ${num} es impar`)
+    alert(`El número ${num} es impar`);
     }
 }
 
@@ -91,9 +91,9 @@ function ejercicio7() {
 
 function ejercicio8() {
     if (nota <= 4.0) {
-        alert(`Estudiante aprobado`)
+        alert(`Estudiante aprobado`);
     } else {
-        alert(`Estudiante desaprobado`)
+        alert(`Estudiante desaprobado`);
     }
 }
 
@@ -105,7 +105,7 @@ function ejercicio8() {
 function ejercicio9() {let precio = 100;
     let descuento = precio*0.10;
     let precioFinal = precio - descuento;
-alert(`Precio final con descuento: $${precioFinal}`)
+    alert(`Precio final con descuento: $${precioFinal}`);
 }
 
 
