@@ -68,7 +68,6 @@ function ejercicio15() {
     let producto = "teclado";
     let precioProducto = 50000;
     let descuento = 0;
-    let precioFinal = precioProducto - descuento;
     if (precioProducto >= 50000) {
         descuento = precioProducto * 0.10;
     } else if (precioProducto >= 20000) {
@@ -76,5 +75,6 @@ function ejercicio15() {
     } else {
         descuento = 0;
     }
+    let precioFinal = precioProducto - descuento;
     alert(`El producto ${producto.toUpperCase()} tiene un precio final de $${precioFinal}`);
 }
