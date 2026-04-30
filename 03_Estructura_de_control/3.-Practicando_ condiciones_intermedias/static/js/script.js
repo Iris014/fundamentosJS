@@ -36,10 +36,9 @@ function ejercicio12() {
 function ejercicio13() {
     let correo = "liceovvh@gmail.com"
     if (correo.length > 15) {
-        alert(`El correo convertido es: ${correo} 
-            \ny el resultado es: correo válido`)
+        alert(`El correo convertido es: ${correo} y el resultado es: correo válido`)
     } else {
-        alert(`correo inválido`)
+        alert(`El correo convertido es: ${correo} y el resultado es: correo inválido`)
     }
 }
 
@@ -51,7 +50,7 @@ function ejercicio13() {
 function ejercicio14() {
     let frase = "Estoy aprendiendo JavaScript";
     if (frase.length > 20) {
-        alert(`La frase "Estoy aprendiendo JavaScript" tiene ${frase.length} caracteres y corresponde a una Frase larga`);
+        alert(`La frase "${frase}" tiene ${frase.length} caracteres y corresponde a una Frase larga`);
     } else if (frase.length > 11) {
         alert(`Frase mediana`);
     } else {
