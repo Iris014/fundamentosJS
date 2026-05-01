@@ -29,7 +29,9 @@ console.log(typeof valorNumero);
 console.log(typeof valorTexto);
 
 // 6. Caja vacía
-let comentarios = "";
+let comentarios;
+console.log(comentarios);
+comentarios = null;
 console.log(comentarios);
 
 // 7. Suma de strings
@@ -49,6 +51,7 @@ let iva = precioProducto * 0.19;
 let totalFinal = precioProducto + iva;
 console.log("El total final con IVA es: " + totalFinal);
 
-let paisOrigen = "Chile";
+const paisOrigen = "Chile";
+// paisOrigen = "Ecuador";
 
 console.log("País de origen:", paisOrigen);
