@@ -1,9 +1,8 @@
 console.log("¡Archivo vinculado correctamente!");
-// --- NIVEL: VARIABLES Y CONSOLA ---
 
 // 1. Presentación
 const nombre = "Iris"; 
-let edad = 17; // Puedes cambiar este valor por el tuyo
+let edad = 17;
 console.log("Mi nombre es " + nombre + " y tengo " + edad + " años");
 
 // 2. Año de nacimiento
@@ -18,11 +17,9 @@ estaSuscrito = false;
 console.log("Estado de suscripción:", estaSuscrito);
 
 
-// --- NIVEL: TIPOS DE DATOS ---
-
-// 4. El Menú
-const plato = "Pizza Margarita";
-let precio = 12000;
+// 4. Menú
+const plato = "Pizza Italiana";
+let precio = 3500;
 console.log("Plato:", plato, "- Precio: $" + precio);
 
 // 5. Verificador de tipos
@@ -33,12 +30,9 @@ console.log(typeof valorTexto);
 
 // 6. Caja vacía
 let comentarios;
-console.log(comentarios); // Mostrará undefined
+console.log(comentarios);
 comentarios = null;
-console.log(comentarios); // Mostrará null
-
-
-// --- NIVEL: OPERACIONES Y FORMATO ---
+console.log(comentarios);
 
 // 7. Suma de strings
 let saludo = "Hola";
@@ -57,8 +51,8 @@ let iva = precioProducto * 0.19;
 let totalFinal = precioProducto + iva;
 console.log("El total final con IVA es: " + totalFinal);
 
+// Const Intocable
 const paisOrigen = "Chile";
-
-// paisOrigen = "Ecuador"; 
+// paisOrigen = "Ecuador";
 
 console.log("País de origen:", paisOrigen);
