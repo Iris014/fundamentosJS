@@ -89,29 +89,43 @@ function ejercicio15() {
 // Mayor o igual a 100.000 → Cliente Premium (20% descuento)
 // Mayor o igual a 50.000 → Cliente Frecuente (10% descuento)
 // Menor a 50.000 → Cliente Normal (sin descuento)
+
+// Mostrar:
+
+// Nombre del cliente en mayúsculas
+// Producto en minúsculas
+// Precio original
+// Precio final
+// Tipo de cliente
 function ejercicio16() {
     let cliente = "Alex";
     let productoCliente = "Jabon";
     let precioProducto = 2000;
     let porDescuento = 0;
     let compra = 0
-    if (productoCliente => 100000) {
+    if (productoCliente >= 100000) {
         porDescuento = 0.80;
         compra = precioProducto*porDescuento;
-        alert(`${cliente.toUpperCase()}
-        \nCliente Premium (20% descuento)
-        \nPrecio de compra: $${compra}`);
-    } else if (productoCliente => 50000) {
+        alert(`Cliente: ${cliente.toUpperCase()}
+        \nProducto: ${productoCliente.toLowerCase()}
+        \nPrecio original: ${precioProducto}
+        \nPrecio final: $${compra}
+        \nCliente Premium (20% descuento)`);
+    } else if (productoCliente >= 50000) {
         porDescuento = 0.90;
         compra = precioProducto*porDescuento;
-        alert(`${cliente.toUpperCase()}
-        \nCliente Frecuente (10% descuento)
-        \nPrecio de compra: $${compra}`);
+        alert(`Cliente: ${cliente.toUpperCase()}
+        \nProducto: ${productoCliente.toLowerCase()}
+        \nPrecio original: ${precioProducto}
+        \nPrecio final: $${compra}
+        \nCliente Frecuente (10% descuento)`);
     } else {
         porDescuento = 0;
-        alert(`${cliente.toUpperCase()}
-        \nCliente Normal (sin descuento)
-        \nPrecio de compra: $${compra}`);
+        alert(`Cliente: ${cliente.toUpperCase()}
+        \nProducto: ${productoCliente.toLowerCase()}
+        \nPrecio original: ${precioProducto}
+        \nPrecio final: $${compra}
+        \nCliente Normal (sin descuento)`);
     }
 }
 
@@ -137,19 +151,19 @@ function ejercicio16() {
 // Puntaje
 // Clasificación
 function ejercicio17() {
-    let fraseAnalisis = "Análisis de frase con puntuación";
+    let analisis = "Análisis de frase con puntuación";
     let puntajeNumerico = 75;
     let clasificacion = "";
-    if (fraseAnalisis.length > 90) {
-        clasificación = "Excelente";
-    } else if (fraseAnalisis.length > 70) {
-        clasificación = "Bueno";
+    let largo = analisis.length;
+    if (puntajeNumerico >= 90) {
+        clasificacion = "Excelente";
+    } else if (puntajeNumerico >= 70) {
+        clasificacion = "Bueno";
     } else {
-        clasificación = "Insuficiente";
+        clasificacion = "Insuficiente";
     }
-    alert(`${fraseAnalisis}
-    \nFrase transformada: "${frase.toLowerCase()}"
-    \nLargo de la frase: ${fraseAnalisis.length}
+    alert(`Frase transformada: "${analisis.toLowerCase()}"
+    \nLargo de la frase: ${analisis.length}
     \nPuntaje: ${puntajeNumerico}
     \nClasificación: ${clasificacion}`);
 }
@@ -173,3 +187,63 @@ function ejercicio17() {
 // Cantidad de caracteres del nombre
 // Promedio
 // Estado final
+function ejercicio18() {
+    let estudiante = "Luna";
+    let n1 = 4.9;
+    let n2 = 5.7;
+    let n3 = 7.0;
+    let promedio = (n1 + n2 + n3)/3;
+    if (promedio >= 6.0) {
+        alert(`Estudiante:${estudiante.toUpperCase()} 
+        \nCantidad de caracteres: ${estudiante.length}
+        \nPromedio: ${promedio}
+        \nDestacado`);
+    } else if (promedio >= 4.0) {
+        alert(`Estudiante: ${estudiante.toUpperCase()} 
+        \nCantidad de caracteres: ${estudiante.length}
+        \nPromedio: ${promedio}
+        \nAprobado`);
+    } else {
+        alert(`Estudiante:${estudiante.toUpperCase()} 
+        \nCantidad de caracteres: ${estudiante.length}
+        \nPromedio: ${promedio}
+        \nReprobado`);
+    }
+}
+
+// Ejercicio 19: Clasificación de desempeño con más niveles
+// Crear una función que almacene el nombre de un estudiante y su promedio final. Luego:
+
+// Convertir el nombre a mayúsculas
+// Clasificar el rendimiento según:
+// ≥ 6.5 → Sobresaliente
+// ≥ 6.0 → Muy buen rendimiento
+// ≥ 5.0 → Buen rendimiento
+// ≥ 4.0 → Suficiente
+// < 4.0 → Insuficiente
+
+// Además:
+
+// Mostrar la cantidad de caracteres del nombre
+
+function ejercicio19() {
+    let estudianteNivel = "Rosa";
+    let n01 = 5.6;
+    let n02 = 6.8;
+    let promedioFinal = (n01 + n02 + n03)/ 3;
+    let rendimiento = "";
+    if (promedioFinal >= 6.5) {
+        rendimiento = "Sobresaliente";
+    } else if (promedioFinal >= 6.0) {
+        rendimiento = "Muy buen rendimiento";
+    } else if (promedioFinal >= 5.0) {
+        rendimiento = "Buen rendimiento";
+    } else if (promedioFinal >= 4.0) {
+        rendimiento = "Suficiente";
+    } else {
+        rendimiento = "Insuficiente";
+    }
+    alert(`Nombre: ${estudianteNivel.toUpperCase()}
+    \nPromedio final: ${promedioFinal}
+    \nRendimiento: ${rendimiento}`)
+}
